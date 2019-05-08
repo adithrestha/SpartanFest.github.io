@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Diplo</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+        
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="diplo.jpg">  
+    <p id="bout2">A superstar DJ, sought-after producer, taste-making label owner, and wizard behind Major Lazer, Diplo (aka Diplodocus, Wes Diplo, and Wes Gully) launched his career on the fringes of dance music. With his mash-up mixtapes, he found and created a sound where his musical tastes -- '80s pop, electronica, Dirty South hip-hop, and his major influence, Miami bass music -- intersect. His attention-grabbing projects Hollertronix, with partner DJ Low Budget, and the Piracy Funds Terrorism, Vol. 1 mixtape, with British-Sri Lankan MC M.I.A., made a heavy impact on the alternative electro-pop scene, amassing rave reviews from music critics and indie kids alike. Later, his Mad Decent imprint presented the edge of pop, hip-hop, and dance music while his conceptual Major Lazer project mixed dancehall with rave culture and toured the globe as a live party sound system. By the late 2010s, super-duos with Skrillex (Jack U) and Mark Ronson (Silk City) both yielded Grammy wins for collaborations with Justin Bieber and Dua Lipa, respectively.</p>
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("Diplo was born Thomas Wesley Pentz in Tupelo, Mississippi.", "In 2015, he co-produced multiple tracks on Madonna's release Rebel Heart, and worked with Skrillex on the album Skrillex and Diplo Present Jack Ü.");
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>

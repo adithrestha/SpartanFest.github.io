@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tyler The Creator</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <h2>Tyler The Creator</h2>
+
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="tyler.jpg">  
+    <p id="bout2">One of the more fascinating artistic evolutions since the late 2000s has been that of Tyler, The Creator. The rapper and producer surfaced as a founding member of Odd Future, an outlandish alternative rap crew that gradually permeated the mainstream as it begat a multitude of related projects. A high percentage of these recordings, including Earl Sweatshirt's Earl (2010), Odd Future's The OF Tape, Vol. 2 (2012), and Frank Ocean's Grammy-winning Channel Orange (2012), have been made with Tyler's deep involvement. As a solo artist, Tyler's output has gleefully swung from purposefully distasteful and crude to charming and sophisticated, sometimes blurring the distinction between the extremes. All four of his own albums, namely Goblin (2011), Wolf (2013), Cherry Bomb (2015), and Flower Boy (2017), have debuted within the Top Five of the Billboard 200, distinguished most (above all other qualities) by his gravelly voice and an irascible disposition befitting a collision-shop owner. Tyler reached a new level of acceptance with the kaleidoscopic latter LP, nominated for a Grammy in the category of Best Rap Album. Since then, Tyler has continued to extend his reach outside the Odd Future universe, and has issued stray singles and an EP, Music Inspired by Illumination & Dr. Seuss' The Grinch (2018).
+        </p>
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("Tyler Okonma was born and raised in Los Angeles County, splitting time in Ladera Heights and nearby Hawthorne", "He got his first taste of fame when The Los Angeles Times ran a teen on the street-type story on the then-16-year-old skateboarding enthusiast, who was also interested in music and fashion.", "Tyler began making music with Odd Future's other core members, and in 2009 released a solo mixtape titled Bastard. By the end of the following year, OF's surreal and filthy material, epitomized by Earl Sweatshirt's mixtape Earl -- most of which Tyler produced -- had earned them a loyal following");
+            
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>

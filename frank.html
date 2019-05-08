@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Frank Ocean</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+</head>
+<body>
+   <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <h2>Frank Ocean</h2>
+
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="frank.jpg">  
+    <p id="bout2">Frank Ocean has been one of the more fascinating artists of the 2010s. A singer and songwriter whose output has defied rigid classification as R&B, he has nonetheless pushed that genre forward with seemingly offhanded yet imaginatively detailed narratives in which he has alternated between yearning romantic and easygoing braggart. Ocean debuted as a solo artist with "Novacane," a single regarding a fling that could be read, in part, as a criticism of commercial radio, yet it found a home on mainstream urban playlists. Despite further strained relations with music industry machinations, Channel Orange, his first proper album, made him a Grammy winner and performer, and once he left the major-label system, his commercial clout was greater than ever, as demonstrated by the chart-topping success of follow-up Blond.
+        </p>
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("In February 2011, as Odd Future were making waves, Ocean broke out on his own with the Nostalgia, Ultra mixtape, issued through his Tumblr blog.", "The album, Channel Orange, was previewed for journalists at a handful of listening events. Some writers alleged that certain lyrics on the album revealed Ocean's bisexuality.");
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>

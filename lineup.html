@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lineup</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	<h1>Lineup</h1>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="container">
+            
+    <p id="click">*Click on Artists Below To View Artist Page*</p>    
+            
+    
+    <div class="column-left">
+    <h2>Day 1</h2>
+    <ul class = "list1">
+            <li><a href="childish.html">Childish Gambino</a></li>
+            <li><a href="rex.html">Rex Orange County</a></li>
+            <li><a href="drake.html">Drake</a></li>
+    </ul>
+    </div>
+
+    <div class="column-center">
+    <h2>Day 2</h2>
+    <ul class = "list2">
+        <li><a href="JCole.html">J.Cole</a></li>
+        <li><a href="arctic.html">Arctic Monkeys</a></li>
+        <li><a href="diplo.html">Diplo</a></li>
+    </ul>
+    </div>
+
+    <div class="column-right">
+    <h2>Day 3</h2>
+    <ul class = "list3">
+            <li><a href="frank.html">Frank Ocean</a></li>
+            <li><a href="tyler.html">Tyler, The Creator</a></li>
+            <li><a href="post.html">Post Malone</a></li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Childish Gambino</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="Childish.jpg">  
+    <p id="bout2">Childish Gambino is the alter ego of multi-hyphenate American entertainer Donald Glover, who is also known for acting roles on television shows like Community and the Emmy- and Golden Globe-winning Atlanta, as well as the film Solo: A Star Wars Story. As Childish Gambino, Glover refined his off-kilter brand of hip-hop on his 2013 breakthrough album Because the Internet, before making a sharp turn toward R&B-inspired funk, which won him a Grammy for Best Traditional R&B Performance in 2017 for the single "Redbone." In 2018, his politically charged song "This Is America" debuted at number one atop the Billboard Hot 100, buoyed by a viral music video that addressed gun violence and racial injustice.
+                Switching back to acting for a stint, Glover was featured in Spider-Man: Homecoming in 2017 and cast as Lando Calrissian in 2018's Solo: A Star Wars Story. As promotion for that film was underway, Glover hosted Saturday Night Live and performed as Childish Gambino. He debuted the trap-indebted song "This Is America," which quickly became a viral hit for its controversial music video and politically charged lyrics. The track debuted atop the Billboard Hot 100 in May 2018 and would sweep the Grammys that year. At the 61st annual Grammy awards, held in February of 2019, "This Is America" took home a total of four trophies, winning Song of the Year, Record of the Year, Best Music Video, and Best Rap/Sung Performance </p>
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("His real name is Donald McKinley Glover.", "He was born on 25 September 1983.", "The US comedy-drama series «Atlanta» was created Childish Gambino and also starred in it.");
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>

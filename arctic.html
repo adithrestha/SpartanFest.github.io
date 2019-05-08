@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arctic Monkeys</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+         <link rel="stylesheet" type="text/css" href="lineup.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+ <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    <h2>Arctic Monkeys</h2>
+
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="arctic.jpg">  
+    <p id="bout2">Arctic Monkeys arrived in 2005 with a blast. Assisted by rave reviews and online word of mouth (they were one of the first bands to benefit from the tangled web of social media), the band quickly became a sensation in the United Kingdom, where they were seen as the heir apparent to the throne left vacant by Oasis, or perhaps the Libertines. (Their 2006 debut Whatever People Say I Am, That's What I'm Not briefly grabbed the title of fastest-selling album in British history.) What set the group apart was Alex Turner, a singer/songwriter with a biting wit and grasp of English vernacular (not dissimilar to Paul Weller, the godfather of modern British rock). While that particular style often fails to translate to a worldwide audience, Arctic Monkeys broke this tradition, cracking the American market not by sacrificing Turner's trademark storytelling but by beefing up their guitars (sometimes in association with Josh Homme of Queens of the Stone Age). Eventually, Arctic Monkeys laced in some of the louche lounge aspects of Turner's swinging side project the Last Shadow Puppets, but by that point, the band were a staple throughout the world: a respected, adventurous, and successful group who could easily be called Britain's biggest band of the early 21st century.
+
+            Alex Turner and guitarist Jamie Cook began their music careers in 2001, when the friends both received guitars for Christmas. Two years later, they began performing shows around their native Sheffield with drummer Matt Helders and bassist Andy Nicholson, two fellow students at Stocksbridge High School. A series of demo recordings followed, and Arctic Monkeys' audience swelled as fans circulated those recordings via the Internet. The musicians soon found themselves at the center of a growing media circus, with such outlets as BBC Radio examining the band's music and mounting hype.</p>
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("By distributing their homemade material on the Internet, Arctic Monkeys were able to build a sizable fan base without the help of a record label, effectively circumventing the usual road to superstardom", "he smart moves paid off as Arctic Monkeys' first two singles -- I Bet You Look Good on the Dancefloor and  When the Sun Goes Down -- both topped the U.K. charts.");
+            
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>

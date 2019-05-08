@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>J. Cole</title>
+        <link rel="stylesheet" type="text/css" href="artist.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="lineup.css"/>
+
+
+</head>
+<body>
+ <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="lineup.html">Lineup</a>
+  <a href="Directions.html">Directions</a>
+  <a href="Hotels.html">Hotels</a>
+  <a href="FoodAndDrinks.html">Eat & Drink</a>
+  <a href="Restricted Items.html">Restricted Items</a>
+  <a href="BuyTickets.html"class="active">Buy Tickets</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <h2>J. Cole</h2>
+
+    <p id ="about">ABOUT THE ARTIST</p>
+    <img class="image" src="JCole.jpg">
+    <p id="bout2">Raised on 2Pac, Biggie, Nas, and JAY-Z, J. Cole emerged in the 2010s as a kind of torchbearer for serious hip-hop. He takes on capital-T topics with an earnestness—and moral imperative—that most rappers seem to avoid. A North Carolina native (born in Frankfurt, West Germany, in 1985), Cole moved to New York City on scholarship to St. John’s University, graduating magna cum laude while making beats on the side, at one point waiting outside JAY-Z’s studio for three hours to give him a CD. Jay dismissed him initially, but circled back a year or so later on the strength of Cole’s mixtapes, making him the first signee to the Roc Nation label. Cole’s since gone on to release a string of ambitious, increasingly confident albums, often meditating on single subjects at length: 2018’s KOD, for example, offered a sustained look at addiction, while several songs on 2016’s 4 Your Eyez Only were written from the perspective of a friend killed in his early twenties after leaving the drug game—a composite of people Cole knew from childhood. Despite the gravity of his subjects (and his sobering delivery), Cole—like his occasional collaborator Kendrick Lamar—is the rare artist who has managed to reconcile the conscious with the commercial, balancing his conceptual side with giant singles like “Work Out,” “Deja Vu,” and “ATM."</p>
+        
+
+        <h4>DISCOVER MORE!</h4>
+
+        <input type="button" class="random" id="btnSearch" value="Generate Random Fact About The Artist" onclick="GetFact();" />
+        <p id="message" ></p>
+
+ <script>
+        function GetFact()
+        {
+            var facts= new Array("J. Cole was actually born in Frankfurt, Germany.", "J. Cole began rapping when he was 12.", "J. Cole originally had the rap names Blaza and Therapist.");
+            var random = facts[Math.floor(Math.random()*facts.length)];
+            document.getElementById("message").innerHTML= random;
+        }
+</script>
+        
+        <p id = "social">Check Out The Artist Social Media</p>
+        <a href="https://twitter.com/jcolenc?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/channel/UCnc6db-y3IU7CkT_yeVXdVg" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/realcoleworld/?hl=en" class="fa fa-instagram"></a>
+
+        
+        
+
+
+</body>
+</html>
